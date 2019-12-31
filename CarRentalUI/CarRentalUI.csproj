@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4826F977-E1D5-4003-A179-A073075F02E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarRentalUI</RootNamespace>
+    <AssemblyName>CarRentalUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Framework.Core">
+      <HintPath>..\DLLs\Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.WinForm">
+      <HintPath>..\DLLs\Framework.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBrandAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrandAdd.Designer.cs">
+      <DependentUpon>FormBrandAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCarAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarAdd.Designer.cs">
+      <DependentUpon>FormCarAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCarList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarList.Designer.cs">
+      <DependentUpon>FormCarList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCarRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarRental.Designer.cs">
+      <DependentUpon>FormCarRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCarUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarUpdate.Designer.cs">
+      <DependentUpon>FormCarUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerAdd.Designer.cs">
+      <DependentUpon>FormCustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerList.Designer.cs">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerUpdate.Designer.cs">
+      <DependentUpon>FormCustomerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModelAdd.Designer.cs">
+      <DependentUpon>FormModelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModelList.Designer.cs">
+      <DependentUpon>FormModelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasswordChange.Designer.cs">
+      <DependentUpon>FormPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserAdd.Designer.cs">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserList.Designer.cs">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBrandAdd.resx">
+      <DependentUpon>FormBrandAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCarAdd.resx">
+      <DependentUpon>FormCarAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCarList.resx">
+      <DependentUpon>FormCarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCarRental.resx">
+      <DependentUpon>FormCarRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCarUpdate.resx">
+      <DependentUpon>FormCarUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerAdd.resx">
+      <DependentUpon>FormCustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerList.resx">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerUpdate.resx">
+      <DependentUpon>FormCustomerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModelAdd.resx">
+      <DependentUpon>FormModelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModelList.resx">
+      <DependentUpon>FormModelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasswordChange.resx">
+      <DependentUpon>FormPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserAdd.resx">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserList.resx">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarRental.BLL\CarRental.BLL.csproj">
+      <Project>{9790ED87-A860-4A3C-BDE0-80B90B1D2AE3}</Project>
+      <Name>CarRental.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRental.DTO\CarRental.DTO.csproj">
+      <Project>{F719636B-3843-4E0F-A551-D58DC3D68DDD}</Project>
+      <Name>CarRental.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRentalEnums\CarRentalEnums.csproj">
+      <Project>{4876D839-B711-43B4-B213-C7F1CBCF98E7}</Project>
+      <Name>CarRentalEnums</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
